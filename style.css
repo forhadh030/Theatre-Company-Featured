@@ -1,0 +1,121 @@
+body {
+    box-sizing: border-box;
+}
+
+body#main {
+    display: flex;
+    flex-direction: column;
+}
+
+#main div:nth-of-type(1) {
+    flex-grow: 3;
+}
+
+#main #ticket:nth-of-type(2) {
+    flex-grow: 1;
+}
+
+#main #footer:nth-of-type(3) {
+    flex-grow: 2;
+}
+
+#flex-container {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+nav p {
+    flex-shrink: 1;
+    font-size: 24px;
+    display: flex;
+    margin: 24px 40px;
+    padding-right: 24px;
+}
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#flex-container > a {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    padding-left: 24px;
+    margin: 0 24px;
+}
+
+#cover img {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#ticket {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#ticket ol {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+#ticket li {
+    display: flex;
+    padding: 20px;
+    border-left: none;
+    border-right: none;
+    flex-direction: column;
+}
+
+.row p > #ticket {
+    display: flex;
+    flex-direction: column;
+}
+
+#ticket button {
+    display: inline-block;
+    background-color: rgb(246, 186, 76);
+    color: white;
+    margin-top: 75px;
+    margin-left: 100px;
+    padding: 14px;
+    text-align: right;
+}
+
+#ticket img {
+    padding-top: 35px;
+    width: 200px;
+    height: 150px;
+}
+
+#footer {
+    display: flex;
+}
+
+#footer img {
+    width: 20%;
+    padding: 20px;
+    background-color: black;
+}
+
+#footer table {
+    background-color: black;
+    color: white;
+}
+
+#footer th, tr {
+    text-align: left;
+    padding-top: 10px;
+}
+
+#footer td {
+    font-size: 8px;
+}

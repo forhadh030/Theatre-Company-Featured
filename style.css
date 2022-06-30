@@ -1,30 +1,18 @@
-body {
+/* Box-sizing property allows us to include the padding and border in an element's total width and height. */
+* {
     box-sizing: border-box;
+    margin: 0;
+    font-family: 'Gulzar', serif;
 }
 
-body#main {
-    display: flex;
-    flex-direction: column;
-}
-
-#main div:nth-of-type(1) {
-    flex-grow: 3;
-}
-
-#main #ticket:nth-of-type(2) {
-    flex-grow: 1;
-}
-
-#main #footer:nth-of-type(3) {
-    flex-grow: 2;
-}
-
-#flex-container {
+/* Top nav color to match background */
+#container {
     background-color: black;
     color: white;
     text-decoration: none;
 }
 
+/* Top nav positions (right to left) */
 nav p {
     flex-shrink: 1;
     font-size: 24px;
@@ -32,12 +20,14 @@ nav p {
     margin: 24px 40px;
     padding-right: 24px;
 }
+
+/* top nav positions (up and down) */
 nav {
     display: flex;
-    justify-content: flex-start;
 }
 
-#flex-container > a {
+/* Top nav margin and sizing (all-around) */
+#container > a {
     font-size: 12px;
     text-decoration: none;
     color: white;
@@ -46,24 +36,54 @@ nav {
     margin: 0 24px;
 }
 
+/* Top img width and height */
 #cover img {
+    display: block;
     width: 100%;
-    height: 100%;
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1.0;
 }
 
+/* Centered the texts within the img */
+.cover-text p {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 105px;
+  }
+
+  /* centers the ticket section */
+.flex-container {
+    display: flex;
+  }
+
+  /* centers the ticket section */
+.flex-left {
+    background-color: #f1f1f1;
+    flex: 20%;
+    background-color: white;
+  }
+
+  /* aligns the ticket section vertically */
 #ticket {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    flex: 40%;
 }
+
+  /* centers the ticket section */
+.flex-right {
+    background-color: #f1f1f1;
+    flex: 20%;
+    background-color: white;
+  }
 
 #ticket ol {
     display: flex;
-    justify-content: center;
     border-top: 1px solid black;
 }
 
@@ -73,6 +93,7 @@ nav {
     border-left: none;
     border-right: none;
     flex-direction: column;
+    font-size: 10px;
 }
 
 .row p > #ticket {

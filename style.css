@@ -72,7 +72,7 @@ nav {
 #ticket {
     display: flex;
     flex-direction: column;
-    flex: 40%;
+    flex: 50%;
 }
 
   /* centers the ticket section */
@@ -82,35 +82,33 @@ nav {
     background-color: white;
   }
 
+/* replicating border-line in ticketing section */
 #ticket ol {
     display: flex;
-    border-top: 1px solid black;
+    border-top: 1px rgb(197, 197, 200) solid;
+    margin-bottom: 20px;
 }
 
+/* Ticketing information about the show */
 #ticket li {
     display: flex;
     padding: 20px;
-    border-left: none;
-    border-right: none;
+    margin-top: 12px;
     flex-direction: column;
     font-size: 10px;
+    line-height: 30px;
 }
 
-.row p > #ticket {
-    display: flex;
-    flex-direction: column;
-}
-
+/* Build & Position the "read more" button */
 #ticket button {
     display: inline-block;
     background-color: rgb(246, 186, 76);
     color: white;
-    margin-top: 75px;
-    margin-left: 100px;
+    margin: 60px 0 0 35px;
     padding: 14px;
-    text-align: right;
 }
 
+/* Positing and resizing the show image */
 #ticket img {
     padding-top: 35px;
     width: 200px;
@@ -121,22 +119,25 @@ nav {
     display: flex;
 }
 
-#footer img {
-    width: 20%;
-    padding: 20px;
-    background-color: black;
-}
-
+/* unable to figure out how to bring rows closer together */
 #footer table {
     background-color: black;
     color: white;
+    width: 80%;
+    padding: 10px 20px;
 }
 
-#footer th, tr {
+#footer tr {
     text-align: left;
-    padding-top: 10px;
 }
 
 #footer td {
     font-size: 8px;
+}
+
+/* unable to figure out how to minimize the img */
+#footer img {
+    width: 20%;
+    margin: 0;
+    padding: 0;
 }
